@@ -60,7 +60,7 @@ class TargetOSX(Target):
                     ('cp', '-a', '/Applications/Keka.app', './Keka.app'),
                      cwd=cwd)
             else:
-                check_call(('curl', '-o',
+                check_call(('curl', '-O',
                     'http://www.kekaosx.com/release/Keka-1.0.4-intel.dmg'),
                     cwd=cwd)
                 check_call(
